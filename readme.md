@@ -7,6 +7,9 @@ var mgnConfig = require('lol-build-manager-config');
 ```
 
 ### Properties
+`urlProtocol`
+
+`supportedBuildSites`
 
 ### TODO
 - [ ] Property documentation
