@@ -13,10 +13,12 @@ config.urlProtocol = 'lolbuilder';
  */
 config.supportedBuildSites = [
   {
-    id: 'mobafire',
     hostname: 'mobafire.com'
     pathnames: [
-      '/league-of-legends/build/:title',
+      {
+        module: 'mobafire',
+        path: '/league-of-legends/build/:title'
+      }
     ]
   }
 ];
