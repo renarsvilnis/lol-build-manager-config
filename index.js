@@ -12,11 +12,13 @@ config.urlProtocol = 'lolbuilder';
  * @type {Array}
  */
 config.supportedBuildSites = [
-  'probuilds.net/guide/',
-  'mobafire.com/league-of-legends/build/',
-  'solomid.net/guide/view/',
-  'lolpro.com/user-guides/',
-  'lolpro.com/guides/'
+  {
+    id: 'mobafire',
+    hostname: 'mobafire.com'
+    pathnames: [
+      '/league-of-legends/build/:title',
+    ]
+  }
 ];
 
 module.exports = config;
