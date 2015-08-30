@@ -9,15 +9,19 @@ config.urlProtocol = 'lolbuilder';
 
 /**
  * List of League of Legends build guide website url's that are supported
+ * Note: hostnames should have a endind slash
+ * Note: pathname should start with a slash
+ * Note: for pathname creation check referenced url
+ * Reference: https://github.com/snd/url-pattern
  * @type {Array}
  */
-config.supportedBuildSites = [
+config.supportedSites = [
   {
     hostname: 'mobafire.com'
     pathnames: [
       {
         module: 'mobafire',
-        path: '/league-of-legends/build/:title'
+        pathname: '/league-of-legends/build/:title'
       }
     ]
   }
