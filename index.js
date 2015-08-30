@@ -17,7 +17,7 @@ config.urlProtocol = 'lolbuilder';
  */
 config.supportedSites = [
   {
-    hostname: 'mobafire.com'
+    hostname: 'mobafire.com',
     pathnames: [
       {
         module: 'mobafire',
