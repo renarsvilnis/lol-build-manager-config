@@ -1,12 +1,16 @@
-var config = {};
-
 /**
  * Url protocol that gets registered in operating systems
  * and used to communicate beetween browsers extensions and native application
  * @type {String}
  */
-config.urlProtocol = 'lolbuilder';
+'use strict';
 
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+var urlProtocol = 'lolbuilder';
+
+exports.urlProtocol = urlProtocol;
 /**
  * List of League of Legends build guide website url's that are supported
  * Note: hostnames should have a endind slash
@@ -15,16 +19,11 @@ config.urlProtocol = 'lolbuilder';
  * Reference: https://github.com/snd/url-pattern
  * @type {Array}
  */
-config.supportedSites = [
-  {
-    hostname: 'mobafire.com',
-    pathnames: [
-      {
-        module: 'mobafire',
-        pathname: '/league-of-legends/build/:title'
-      }
-    ]
-  }
-];
-
-module.exports = config;
+var supportedSites = [{
+  hostname: 'mobafire.com',
+  pathnames: [{
+    module: 'mobafire',
+    pathname: '/league-of-legends/build/:title'
+  }]
+}];
+exports.supportedSites = supportedSites;

@@ -17,3 +17,10 @@ import 'config' from 'lol-build-manager-config';
 // es6 with direct property access
 import {urlProtocol} from 'lol-build-manager-config';
 ```
+
+### Developing
+```bash
+# Converts from es6 to es5
+# Use it before commiting
+npm run build
+```
