@@ -3,7 +3,7 @@ Node module that contains the configuration information used in multiple [League
 
 ### Installation
 ```bash
-npm install --save-dev https://github.com/renarsvilnis/lol-build-manager-config
+npm install --save https://github.com/renarsvilnis/lol-build-manager-config
 ```
 
 ### Usage
@@ -18,7 +18,7 @@ import 'config' from 'lol-build-manager-config';
 import {urlProtocol} from 'lol-build-manager-config';
 ```
 
-### Developing
+### Publishing
 ```bash
 # Converts from es6 to es5
 # Use it before commiting
