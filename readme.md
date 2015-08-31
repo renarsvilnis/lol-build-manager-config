@@ -1,15 +1,12 @@
 ## League of Legends build manager config module
-Node module that contains the config of for all [League of Legends build manager](https://github.com/renarsvilnis/lol-build-manager) programs across the board for isomorphic JavaScript.
+Node module that contains the configuration information used in multiple [League of Legends build manager](https://github.com/renarsvilnis/lol-build-manager) programs for isomorphic JavaScript.
 
 ### Usage
 ```javascript
-var mgnConfig = require('lol-build-manager-config');
+// es5
+var config = require('lol-build-manager-config');
+// es6
+import 'config' from 'lol-build-manager-config';
+// es6 direct property access
+import {urlProtocol} from 'lol-build-manager-config';
 ```
-
-### Properties
-`urlProtocol`
-
-`supportedBuildSites`
-
-### TODO
-- [ ] Property documentation
